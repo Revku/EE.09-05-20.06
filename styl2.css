@@ -1,0 +1,77 @@
+* {
+    font-family: Helvetica;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Global Tags */
+h2 {
+    font-size: 250%;
+}
+
+img {
+    padding: 4px;
+}
+
+img:hover {
+    padding: 3px;
+    border: solid steelblue 1px;
+}
+
+
+/* Custom Tags */
+.lewy-blok1, .lewy-blok2, .prawy-blok3 {
+    background-color: snow;
+}
+
+.lewy-blok1, .lewy-blok2 {
+    float: left;
+}
+
+.prawy-blok1, .prawy-blok2, .prawy-blok3 {
+    float: right;
+}
+
+.lewy-blok1 { 
+    height: 400px;
+    width: 70%;
+    text-align: center;
+}
+
+.lewy-blok2 {
+    height: 400px;
+    font-size: 150%;
+    width: 70%;
+}
+
+.prawy-blok1 {
+    height: 150px;
+    width: 30%;
+    background-color: steelblue;
+    text-align: center;
+    color: white;
+}
+
+.prawy-blok2 {
+    height: 350px;
+    width: 30%;
+    background-color: steelblue;
+    color: white;
+}
+
+.prawy-blok3 {
+    text-align: center;
+    width: 30%;
+    background-color: snow;
+    height: 300px;
+}
+
+.footer {
+    background-color: steelblue;
+    color: white;
+    width: 100%;
+}
+
+.field {
+    display: block;
+}
