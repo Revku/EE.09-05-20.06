@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Usługi Fryzjerskie</title>
-
     <link rel="stylesheet" href="./styl2.css">
 </head>
 <body>
 
-    <section class="lewy-blok1">
+    <section class="lewy1">
         <h2>
             <a href="index.html">SALON FRYZJERSKI</a>
         </h2>
         <img  src="./obraz2.jpg" alt="Czesanie">
     </section>
-    <section class="prawy-blok1">
+    <section class="prawy1">
         <h2>MENU</h2>
     </section>
 
-    <section class="prawy-blok2">
+    <section class="prawy2">
         <ol>
             <li>
                 <a href="fryzura.html">Strzyżenie</a>
@@ -37,63 +36,63 @@
         </ol>
     </section>
 
-    <section class="lewy-blok2">
+    <section class="lewy2">
         <h3>Dziś promocja na strzyżenie włosów</h3>
 
         <form action="" class="form">
-            <div class="field">
-                <input type="radio" name="dlugosc" value="krotkie" id="krotkie">
+            <div class="pole">
+                <input type="radio" value="krotkie" name="wybor" id="krotkie">
                 <label for="krotkie">Krótkie</label>
             </div>
             
-            <div class="field">
-                <input type="radio" name="dlugosc" value="srednie" id="srednie">
+            <div class="pole">
+                <input type="radio" value="srednie" name="wybor" id="srednie">
                 <label for="srednie">Średnie</label>
             </div>
             
-            <div class="field">
-                <input type="radio" name="dlugosc" value="poldlugie" id="poldlugie">
+            <div class="pole">
+                <input type="radio" value="poldlugie" name="wybor" id="poldlugie">
                 <label for="poldlugie">Półdługie</label>
             </div>
             
-            <div class="field">
-                <input type="radio" name="dlugosc" value="dlugie" id="dlugie">
+            <div class="pole">
+                <input type="radio" value="dlugie" name="wybor" id="dlugie">
                 <label for="dlugie">Długie</label>
             </div>
         </form>
 
-        <button id="button">Odkryj promocję</button>
+        <button id="przycisk">Odkryj promocję</button>
 
         <p id="wynik"></p>
     </section>
     
-    <section class="prawy-blok3">
+    <section class="prawy3">
         <img src="./obraz1.jpg" alt="Fryzjer">
     </section>
-    <footer class="footer">Autor: Patryk Skolimowski</footer>
+    <footer class="footer">Autor: 000000000</footer>
 
     <script>
-        const btn = document.getElementById('button');
-        const wynik = document.getElementById('wynik');
-        let dlugosc;
+        var btn = document.getElementById('przycisk');
+        var wynik = document.getElementById('wynik');
+        let wybor;
         
         btn.addEventListener('click', () => {
-            const dlugoscQuery = document.getElementsByName('dlugosc');
+            var wyborinput = document.getElementsByName('wybor');
             
-            dlugoscQuery.forEach(el => {
+            wyborinput.forEach(el => {
                 if (el.checked) {
-                    dlugosc = el.value;
+                    wybor = el.value;
                 }
             })
 
-            const showResult = (price) => {
-                wynik.innerHTML = `Cena strzyżenia: ${price}`;
+            function showResult(price) {
+                wynik.innerHTML = "Cena strzyżenia " + price;
             }
 
-            if (dlugosc === "krotkie") { showResult(25) }
-            if (dlugosc === "srednie") { showResult(30) }
-            if (dlugosc === "poldlugie") { showResult(40) }
-            if (dlugosc === "dlugie") { showResult(50) }
+            if (wybor === "krotkie") { showResult(25) }
+            if (wybor === "srednie") { showResult(30) }
+            if (wybor === "poldlugie") { showResult(40) }
+            if (wybor === "dlugie") { showResult(50) }
         });
 
 </script>

@@ -20,31 +20,31 @@ img:hover {
 
 
 /* Custom Tags */
-.lewy-blok1, .lewy-blok2, .prawy-blok3 {
+.lewy1, .lewy2, .prawy3 {
     background-color: snow;
 }
 
-.lewy-blok1, .lewy-blok2 {
+.lewy1, .lewy2 {
     float: left;
 }
 
-.prawy-blok1, .prawy-blok2, .prawy-blok3 {
+.prawy1, .prawy2, .prawy3 {
     float: right;
 }
 
-.lewy-blok1 { 
+.lewy1 { 
     height: 400px;
     width: 70%;
     text-align: center;
 }
 
-.lewy-blok2 {
+.lewy2 {
     height: 400px;
     font-size: 150%;
     width: 70%;
 }
 
-.prawy-blok1 {
+.prawy1 {
     height: 150px;
     width: 30%;
     background-color: steelblue;
@@ -52,14 +52,14 @@ img:hover {
     color: white;
 }
 
-.prawy-blok2 {
+.prawy2 {
     height: 350px;
     width: 30%;
     background-color: steelblue;
     color: white;
 }
 
-.prawy-blok3 {
+.prawy3 {
     text-align: center;
     width: 30%;
     background-color: snow;
