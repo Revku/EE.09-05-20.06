@@ -2,3 +2,5 @@
 
 **Arkusz:** EE.09-05-20.06  
 **Autor:** @TheRevQ  
+
+**ZADANIE NIE ZAWIERA SCREENÓW**
