@@ -3,47 +3,25 @@
     box-sizing: border-box;
     margin: 0;
 }
-
-/* Global Tags */
 h2 {
     font-size: 250%;
 }
-
 img {
     padding: 4px;
 }
-
 img:hover {
     padding: 3px;
     border: solid steelblue 1px;
 }
-
-
-/* Custom Tags */
 .lewy1, .lewy2, .prawy3 {
     background-color: snow;
 }
-
 .lewy1, .lewy2 {
     float: left;
 }
-
 .prawy1, .prawy2, .prawy3 {
     float: right;
 }
-
-.lewy1 { 
-    height: 400px;
-    width: 70%;
-    text-align: center;
-}
-
-.lewy2 {
-    height: 400px;
-    font-size: 150%;
-    width: 70%;
-}
-
 .prawy1 {
     height: 150px;
     width: 30%;
@@ -51,27 +29,33 @@ img:hover {
     text-align: center;
     color: white;
 }
-
 .prawy2 {
     height: 350px;
     width: 30%;
     background-color: steelblue;
     color: white;
 }
-
+.lewy1 { 
+    height: 400px;
+    width: 70%;
+    text-align: center;
+}
+.lewy2 {
+    height: 400px;
+    font-size: 150%;
+    width: 70%;
+}
 .prawy3 {
     text-align: center;
     width: 30%;
     background-color: snow;
     height: 300px;
 }
-
 .footer {
     background-color: steelblue;
     color: white;
     width: 100%;
 }
-
 .field {
     display: block;
 }
